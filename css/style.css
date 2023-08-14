@@ -45,6 +45,14 @@ nav span {
     color: #a17118;
 }
 
+@media (max-width: 500px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+}
+
 /* Principal */
 
 main {
@@ -76,6 +84,12 @@ main p {
 .footrules{
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 1080px){
+    header{
+        display: grid;
+    }
 }
 
 /* Listas */
@@ -136,11 +150,24 @@ figure {
 }
 
 #inicioimg {
-    width: 10%;
+    width: 150px;
+    height: 150px;
     position: absolute;
-    left: 1000px;
-    right: 0px;
+    right: 60px;
     top: 210px;
+}
+
+@media (max-width: 500px){
+    #banner h1 {
+        font-size: 30px;
+    }
+    #inicioimg {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: 0px;
+        top: 210px;
+    }
 }
 
 /* Tabla */
@@ -165,6 +192,12 @@ th {
     color: aliceblue;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+@media (max-width: 500px){
+    table{
+        overflow-x: auto;
+    }
 }
 
 /* Pie de pagina */
